@@ -1,0 +1,66 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+:root {
+    --height: 100px;
+    --width: 100px;
+    --persepctive: 0px;
+    --rotateX: 0deg;
+}
+
+body {
+    width: 36rem;
+    margin: 3rem auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article {
+    display: flex;
+}
+
+#trapezoid {
+    border: 4px solid blue;
+    background-color: aliceblue;
+    width: var(--width);
+    height: var(--height);
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX));
+}
+
+#measure {
+    height: 100%;
+    border-left: dashed #222 2px;
+    width: 50px;
+}
+
+.control, .result {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.control > label, .result > label {
+    width: 3rem;
+}
+
+input[type="number"] {
+    width: 3rem;
+}
+
+#cssArea {
+    width: 18rem;
+    margin: 2rem auto;
+    height: 4.5rem;
+    justify-content: center;
+}
+
+#css {
+    width: 100%;
+    height: 100%;
+}

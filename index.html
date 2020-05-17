@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapezoid Tool</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <aside>
+            <p>Resulting</p>
+            <div id="r-height" class="result">
+                <label>h</label>
+                <input type="number"/>
+            </div>
+            <div id="r-width" class="result">
+                <label>w</label>
+                <input type="number"/>
+            </div>
+        </aside>
+        <article>
+            <div id="trapezoid"></div>
+        </article>
+        <aside>
+            <div class="control" id="height">
+                <label>h</label>
+                <input type="range"/>
+                <input type="number"/>
+                <label>px</label>
+            </div>
+    
+            <div class="control" id="width">
+                <label>w</label>
+                <input type="range"/>
+                <input type="number"/>
+                <label>px</label>
+            </div>
+    
+            <div class="control" id="perspective">
+                <label>p</label>
+                <input type="range"/>
+                <input type="number"/>
+                <label>px</label>
+            </div>
+    
+            <div class="control" id="rotateX">
+                <label>rx</label>
+                <input type="range"/>
+                <input type="number"/>
+                <label>deg</label>
+            </div>
+        </aside>
+    </main>
+    <div id="cssArea">
+        <textarea id="css"></textarea>
+        <button id="copy">Copy</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
